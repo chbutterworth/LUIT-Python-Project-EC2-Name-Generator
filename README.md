@@ -1,3 +1,4 @@
 # Hello World!
-This Repo and the files within are for educational uses only.
-Thank you for your time- be good to one another.
+The EC2 Name Generator is a basic python script is the other file in this repo.
+This repo and the files within are for educational uses only.
+Thanks!
