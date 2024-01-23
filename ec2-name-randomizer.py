@@ -7,7 +7,7 @@ def ec2_name_generator():
     department_name = input("What is your department? ")
 
     if department_name not in allowed_departments:
-        while counter < 2:
+        while counter < 2 and department_name not in allowed_departments:
             print()
             print("You've entered an invalid name.")
             print("Please check your spelling and use lowercase letters." )
@@ -15,7 +15,7 @@ def ec2_name_generator():
             print()
             print("---2 attempts remaing---")
             print()
-            input("What is your department? ")
+            department_name = input("What is your department? ")
         while counter == 2 and department_name not in allowed_departments:
             print()
             print("You've entered an invalid name, again.")
@@ -24,7 +24,7 @@ def ec2_name_generator():
             print()
             print("---1 attempt remaining---")
             print()
-            input("What is your department? ")
+            department_name = input("What is your department? ")
         while counter >= 3 and department_name not in allowed_departments:
             print()
             print("This name is invalid, or this department is not allowed.")
